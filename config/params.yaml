@@ -1,0 +1,30 @@
+# ═══════════════════════════════════════════════════════════════════════
+# FILE PURPOSE: params.yaml
+# ═══════════════════════════════════════════════════════════════════════
+#
+# WHAT IT DOES:
+# - Stores configuration parameters
+# - Allows changing behavior without recompiling
+#
+# HOW TO USE:
+# - ros2 run sensor_fusion_system imu_sensor_node --ros-args --params-file config/params.yaml
+#
+# ═══════════════════════════════════════════════════════════════════════
+
+/imu_sensor_node:
+  ros__parameters:
+    publish_rate: 100.0
+    add_noise: true
+
+/lidar_sensor_node:
+  ros__parameters:
+    scan_rate: 10.0
+    min_angle: -3.14159
+    max_angle: 3.14159
+    range_min: 0.1
+    range_max: 30.0
+    add_noise: true
+
+/fusion_node:
+  ros__parameters:
+    prediction_rate: 50.0
