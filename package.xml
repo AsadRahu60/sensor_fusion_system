@@ -1,14 +1,35 @@
 <?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>sensor_fusion_system</name>
   <version>1.0.0</version>
-  <description>Sensor fusion system</description>
-  <maintainer email="test@test.com">Your Name</maintainer>
+  <description>Real-time sensor fusion system for industrial automation</description>
+  
+  <maintainer email="your.email@example.com">Your Name</maintainer>
   <license>MIT</license>
   
   <buildtool_depend>ament_cmake</buildtool_depend>
+  
+  <!-- Core ROS 2 C++ library -->
   <depend>rclcpp</depend>
+  
+  <!-- Message types -->
   <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>std_srvs</depend>
+  
+  <!-- Math library for Kalman filter -->
+  <depend>eigen</depend>
+  
+  <!-- Testing dependencies -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  <test_depend>ament_cmake_gtest</test_depend>
+  
+  <!-- Python for integration tests -->
+  <exec_depend>rclpy</exec_depend>
+  <test_depend>python3-pytest</test_depend>
   
   <export>
     <build_type>ament_cmake</build_type>

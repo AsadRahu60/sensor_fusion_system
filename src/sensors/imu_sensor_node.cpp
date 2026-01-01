@@ -9,8 +9,8 @@ public:
   ImuNode() : Node("imu_sensor_node")
   {
     pub_ = this->create_publisher<sensor_msgs::msg::Imu>("imu/data", 10);
-    timer_ = this->create_wall_timer(100ms, [this]() { this->publish(); });
-    RCLCPP_INFO(this->get_logger(), "IMU Node started at 10 Hz");
+    timer_ = this->create_wall_timer(10ms, [this]() { this->publish(); });
+    RCLCPP_INFO(this->get_logger(), "IMU Node started at 100 Hz");
   }
 
 private:
