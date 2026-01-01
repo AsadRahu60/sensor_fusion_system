@@ -56,4 +56,8 @@ jobs:
         run: |
           sudo pip3 install --upgrade pip
           sudo pip3 install rosdistro rospkg
-          sudo pip3 uninstall -y colcon_meson # Onl
+          sudo pip3 uninstall -y colcon_meson # Only needed for older versions
+      - name: Install required Python packages
+        run: |
+          pip3 install --upgrade pip
+          pip3 install --upgrade rosinstall-generator rosdistro rospkg colcon-meson meson
