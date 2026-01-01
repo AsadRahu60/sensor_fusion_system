@@ -213,9 +213,9 @@ This project demonstrates concepts from:
 
 **Your Name**  
 M.Sc. Robotics Student @ TH Deggendorf  
-Email: your.email@example.com  
-GitHub: [@YOUR-USERNAME](https://github.com/YOUR-USERNAME)  
-LinkedIn: [Your Profile](https://linkedin.com/in/your-profile)
+Email: asadullahrahoo98@gmail.com  
+GitHub: (https://github.com/asadrahu60)  
+
 
 ---
 

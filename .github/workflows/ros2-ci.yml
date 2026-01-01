@@ -51,3 +51,9 @@ jobs:
           source install/setup.bash
           colcon test --packages-select sensor_fusion_system
           colcon test-result --verbose
+      
+      - name: Install required Python dependencies
+        run: |
+          sudo pip3 install --upgrade pip
+          sudo pip3 install rosdistro rospkg
+          sudo pip3 uninstall -y colcon_meson # Onl
